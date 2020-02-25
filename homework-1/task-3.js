@@ -4,9 +4,10 @@ let value = prompt("Пожалуйста, введите ваш пароль!");
 let message;
 
 if (value === ADMIN_PASS) {
-  (message = `Добро пожаловать!`), alert(message);
+  message = `Добро пожаловать!`;
 } else if (value === null) {
-  (message = `Отменено пользователем!`), alert(message);
+  message = `Отменено пользователем!`;
 } else {
-  (message = `Доступ запрещен, неверный пароль!`), alert(message);
+  message = `Доступ запрещен, неверный пароль!`;
 }
+alert(message);
