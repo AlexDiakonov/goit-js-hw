@@ -66,7 +66,7 @@ class Car {
    * но только в том случае если машина заведена!
    */
   drive(hours) {
-    this.distance = hours * this.speed;
+    this.distance += hours * this.speed;
   }
 }
 console.dir(Car);
