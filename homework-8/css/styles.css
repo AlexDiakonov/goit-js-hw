@@ -105,7 +105,7 @@ body {
   max-width: 100vw;
   opacity: 0;
 
-  transform: scale(0.95);
+  transform: scale(0.94);
 }
 .lightbox__image.slow-open {
   opacity: 1;
