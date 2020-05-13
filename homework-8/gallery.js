@@ -51,28 +51,29 @@ function arrowSwap(e) {
   let img = document.querySelector(".lightbox__image");
   let imgAlt = img.getAttribute("alt");
   let imgIdx = alt.indexOf(imgAlt);
+  let totalIdx = alt.length - 1;
   function addStyle() {
     img.classList.add("slow-open");
   }
   switch (e.key) {
     case "ArrowRight":
       img.classList.remove("slow-open");
-      setTimeout(addStyle, 50);
+      setTimeout(addStyle, 300);
       img.src = originalImages[imgIdx + 1];
       img.setAttribute("alt", `${alt[imgIdx + 1]}`);
-      if (imgIdx >= 8) {
+      if (imgIdx >= totalIdx) {
         img.src = originalImages[0];
         img.setAttribute("alt", alt[0]);
       }
       break;
     case "ArrowLeft":
       img.classList.remove("slow-open");
-      setTimeout(addStyle, 50);
+      setTimeout(addStyle, 300);
       img.src = originalImages[imgIdx - 1];
       img.setAttribute("alt", `${alt[imgIdx - 1]}`);
       if (imgIdx <= 0) {
-        img.src = originalImages[8];
-        img.setAttribute("alt", alt[8]);
+        img.src = originalImages[totalIdx];
+        img.setAttribute("alt", alt[totalIdx]);
       }
       break;
     case "Escape":
