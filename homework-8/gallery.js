@@ -27,6 +27,9 @@ modal.addEventListener("click", closeGallery);
 document.addEventListener("keydown", arrowSwap);
 
 function showPic(e) {
+  function addStyle() {
+    img.classList.add("slow-open");
+  }
   if (e.target === e.currentTarget) {
     return;
   }
@@ -35,10 +38,10 @@ function showPic(e) {
   modal.classList.add("is-open");
   img.src = originalImages[imgIdx];
   img.setAttribute("alt", `${alt[imgIdx]}`);
-  img.classList.add("slow-open");
+  setTimeout(addStyle, 400);
 }
 
-function closeGallery() {
+function closeGallery(e) {
   if (closeButton) {
     modal.classList.remove("is-open");
     img.src = "";
