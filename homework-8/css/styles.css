@@ -146,6 +146,8 @@ body {
     display: block;
   }
   .gallery {
+    margin-top: 0;
+    margin-bottom: 0;
     width: 95%;
     height: 100vh;
     justify-content: center;
@@ -155,7 +157,7 @@ body {
   }
   .gallery__item {
     width: 30%;
-    height: 30%;
+    height: 29%;
     margin-right: 5%;
   }
   .gallery__item:nth-child(3n) {
