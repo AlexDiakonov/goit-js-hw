@@ -147,7 +147,7 @@ body {
   }
   .gallery {
     width: 95%;
-    height: 800px;
+    height: 100vh;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
