@@ -61,7 +61,7 @@ function arrowSwap(e) {
   switch (e.key) {
     case "ArrowRight":
       img.classList.remove("slow-open");
-      setTimeout(addStyle, 400);
+      setTimeout(addStyle, 500);
       img.src = originalImages[imgIdx + 1];
       img.setAttribute("alt", `${alt[imgIdx + 1]}`);
       if (imgIdx >= totalIdx) {
@@ -71,7 +71,7 @@ function arrowSwap(e) {
       break;
     case "ArrowLeft":
       img.classList.remove("slow-open");
-      setTimeout(addStyle, 400);
+      setTimeout(addStyle, 500);
       img.src = originalImages[imgIdx - 1];
       img.setAttribute("alt", `${alt[imgIdx - 1]}`);
       if (imgIdx <= 0) {
