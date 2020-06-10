@@ -9,10 +9,11 @@ body {
 .event {
   font-family: "Metal Mania", cursive;
   font-style: italic;
-  font-size: 60px;
+  font-size: 55px;
   max-width: 90%;
 }
 .timer {
+  max-width: 90%;
   display: flex;
 }
 .field {
@@ -24,9 +25,9 @@ body {
 }
 .value {
   font-family: "Metal Mania", cursive;
-  font-size: 40px;
+  font-size: 50px;
 }
 .label {
   font-family: "Metal Mania", cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
