@@ -9,7 +9,7 @@ body {
 .event {
   font-family: "Metal Mania", cursive;
   font-style: italic;
-  font-size: 55px;
+  font-size: 50px;
   max-width: 90%;
 }
 .timer {
@@ -29,5 +29,5 @@ body {
 }
 .label {
   font-family: "Metal Mania", cursive;
-  font-size: 25px;
+  font-size: 22px;
 }
