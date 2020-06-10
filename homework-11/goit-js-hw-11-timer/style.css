@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.event {
+  font-family: "Metal Mania", cursive;
+  font-style: italic;
+  font-size: 60px;
+}
+.timer {
+  display: flex;
+}
+.field {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.value {
+  font-family: "Metal Mania", cursive;
+  font-size: 40px;
+}
+.label {
+  font-family: "Metal Mania", cursive;
+  font-size: 30px;
+}
